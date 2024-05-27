@@ -20,3 +20,14 @@ class WalletIQCore {
     const velSig = Math.min(velocity / 500, 1.0);
     const cntSig = Math.min(count / 100, 1.0);
     return vSig * 0.5 + velSig * 0.3 + cntSig * 0.2;
+  }
+
+  process(data) {
+    const { value = 0, velocity = 0, count = 0 } = data;
+    const sc = this.score(value, velocity, count);
+    return { score: sc, flagged: sc >= this.threshold, threshold: this.threshold };
+  }
+}
+
+class WalletIQ {
+  constructor() {
