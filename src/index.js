@@ -31,3 +31,14 @@ class WalletIQCore {
 
 class WalletIQ {
   constructor() {
+    this.threshold = parseFloat(process.env.THRESHOLD || '0.75');
+    this.core = new WalletIQCore(this.threshold);
+  }
+
+  async fetchData() {
+    // Stub: replace with live RPC or API integration
+    return { value: 825_000, velocity: 210, count: 38 };
+  }
+
+  async run() {
+    try {
