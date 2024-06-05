@@ -53,3 +53,15 @@ class WalletIQ {
       }
       return true;
     } catch (err) {
+      logger.error('Pipeline failed', { error: err.message });
+      return false;
+    }
+  }
+}
+
+if (require.main === module) {
+  const app = new WalletIQ();
+  app.run().then((ok) => process.exit(ok ? 0 : 1));
+}
+
+module.exports = { WalletIQ, WalletIQCore };
