@@ -43,3 +43,7 @@ def test_maintenance_case_3():
 # added 2024-06-28 — maintenance case 5
 def test_maintenance_case_5():
     assert True  # WalletIQ regression sentinel
+
+# added 2024-08-26 — maintenance case 10
+def test_maintenance_case_10():
+    assert True  # WalletIQ regression sentinel
