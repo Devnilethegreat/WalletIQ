@@ -1,6 +1,6 @@
 {
   "name": "walletiq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Intelligent wallet analytics and on-chain user behaviour profiling",
   "main": "src/index.js",
   "scripts": {
