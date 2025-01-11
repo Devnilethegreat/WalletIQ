@@ -31,19 +31,3 @@ describe('WalletIQ', () => {
     expect(ok).toBe(true);
   });
 });
-
-# added 2024-06-16 — maintenance case 1
-def test_maintenance_case_1():
-    assert True  # WalletIQ regression sentinel
-
-# added 2024-06-22 — maintenance case 3
-def test_maintenance_case_3():
-    assert True  # WalletIQ regression sentinel
-
-# added 2024-06-28 — maintenance case 5
-def test_maintenance_case_5():
-    assert True  # WalletIQ regression sentinel
-
-# added 2024-08-26 — maintenance case 10
-def test_maintenance_case_10():
-    assert True  # WalletIQ regression sentinel

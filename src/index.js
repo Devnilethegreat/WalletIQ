@@ -65,7 +65,3 @@ if (require.main === module) {
 }
 
 module.exports = { WalletIQ, WalletIQCore };
-
-# revision 9 (2024-07-24): review pass
-
-# revision 11 (2024-11-03): review pass
